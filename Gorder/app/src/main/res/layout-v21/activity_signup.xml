@@ -1,0 +1,147 @@
+<RelativeLayout
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="#1E88E5"
+    xmlns:android="http://schemas.android.com/apk/res/android" >
+
+    <Button
+        android:id="@+id/btnSkip"
+        style="?android:attr/buttonStyleSmall"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:background="@drawable/skip_button"
+        android:clickable="true"
+        android:textColor="#FFFFFF"
+        android:textStyle="italic"
+        android:text="Skip"
+        android:layout_alignParentEnd="true"
+        android:layout_gravity="right" />
+
+    <ImageView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:id="@+id/imageView2"
+        android:scrollbarSize="30dp"
+        android:src="@mipmap/gorder_logo_desc_big"
+        android:layout_alignParentBottom="true"
+        android:layout_alignParentStart="true"
+        android:layout_marginBottom="428dp" />
+
+    <EditText
+        android:layout_width="match_parent"
+        android:layout_height="40dp"
+        android:inputType="textPersonName"
+        android:ems="10"
+        android:id="@+id/editTextNameLastName"
+        android:hint="Your First &amp; Last Name"
+        android:background="@drawable/edit_text_style"
+        android:layout_marginLeft="25dp"
+        android:layout_marginRight="25dp"
+        android:paddingLeft="20dp"
+        android:layout_alignBottom="@+id/imageView2"
+        android:layout_alignEnd="@+id/btnSkip" />
+
+    <EditText
+        android:layout_width="match_parent"
+        android:layout_height="40dp"
+        android:inputType="phone"
+        android:ems="10"
+        android:id="@+id/editTextPhoneNumber"
+        android:hint="Your Phone Number"
+        android:layout_marginRight="25dp"
+        android:layout_marginLeft="25dp"
+        android:background="@drawable/edit_text_style"
+        android:paddingLeft="20dp"
+        android:layout_below="@+id/editTextNameLastName"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="5dp" />
+
+    <EditText
+        android:layout_width="match_parent"
+        android:layout_height="40dp"
+        android:inputType="textPassword"
+        android:ems="10"
+        android:layout_below="@+id/editTextPhoneNumber"
+        android:id="@+id/editTextPassword"
+        android:hint="Choose Password"
+        android:layout_alignParentStart="false"
+        android:background="@drawable/edit_text_style"
+        android:layout_marginLeft="25dp"
+        android:layout_marginRight="25dp"
+        android:layout_marginTop="5dp"
+        android:paddingLeft="20dp" />
+
+    <EditText
+        android:layout_width="match_parent"
+        android:layout_height="40dp"
+        android:inputType="textPassword"
+        android:ems="10"
+        android:id="@+id/editTextReEnterPassword"
+        android:layout_below="@+id/editTextPassword"
+        android:layout_centerHorizontal="true"
+        android:hint="Re Enter Password"
+        android:background="@drawable/edit_text_style"
+        android:layout_marginRight="25dp"
+        android:layout_marginLeft="25dp"
+        android:layout_marginTop="5dp"
+        android:paddingLeft="20dp" />
+
+    <EditText
+        android:layout_width="match_parent"
+        android:layout_height="35dp"
+        android:inputType="textEmailAddress"
+        android:ems="10"
+        android:id="@+id/editText5"
+        android:hint="Your Email (Optional)"
+        android:layout_below="@+id/editTextReEnterPassword"
+        android:layout_alignParentStart="true"
+        android:background="@drawable/edit_text_style"
+        android:layout_marginLeft="25dp"
+        android:layout_marginRight="25dp"
+        android:layout_marginTop="5dp"
+        android:paddingLeft="20dp" />
+
+    <Button
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="Done"
+        android:id="@+id/btnDone"
+        android:layout_marginTop="200dp"
+        android:layout_below="@+id/editText5"
+        android:layout_centerHorizontal="true"
+        android:textColor="#FFFFFF"
+        android:background="@android:color/transparent"
+        android:textSize="30dp" />
+
+    <Button
+        android:layout_width="380dp"
+        android:layout_height="60dp"
+        android:text="SignUp With Facebook"
+        android:id="@+id/button"
+        android:textColor="#FFFFFF"
+        android:background="@drawable/facebook_button"
+        android:layout_below="@+id/editText5"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="40dp"
+        android:layout_marginLeft="25dp"
+        android:layout_marginRight="25dp"
+        android:textSize="25sp"
+        style="@style/AppTheme" />
+
+    <Button
+        style="@style/AppTheme"
+        android:layout_width="380dp"
+        android:layout_height="60dp"
+        android:text="SignUp With Google"
+        android:id="@+id/button2"
+        android:textColor="#FFFFFF"
+        android:background="@drawable/google_button"
+        android:layout_marginLeft="25dp"
+        android:layout_marginRight="25dp"
+        android:textSize="25sp"
+        android:layout_below="@+id/button"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="5dp" />
+
+
+</RelativeLayout>

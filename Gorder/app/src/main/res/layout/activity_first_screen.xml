@@ -1,0 +1,95 @@
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools" android:layout_width="match_parent"
+    android:layout_height="match_parent" android:paddingLeft="@dimen/activity_horizontal_margin"
+    android:paddingRight="@dimen/activity_horizontal_margin"
+    android:paddingTop="@dimen/activity_vertical_margin"
+    android:paddingBottom="@dimen/activity_vertical_margin"
+    android:orientation="vertical"
+    tools:context="com.example.elimamis.gorder.FirstScreenActivity"
+    android:background="#1E88E5"
+    android:id="@+id/mainLayout">
+
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:id="@+id/linearLayout"
+        android:background="@drawable/rounded_page"
+        android:layout_alignParentStart="true"
+        android:orientation="vertical"
+        android:layout_weight="0.5">
+
+        <ImageView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:id="@+id/imageView"
+            android:src="@mipmap/gorder_logo_desc_big"
+            android:layout_centerVertical="true"
+            android:layout_alignParentStart="true"
+            android:layout_gravity="top"
+            android:layout_weight="0.1" />
+
+        <EditText
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:ems="10"
+            android:id="@+id/txtUserPhoneLogin"
+            android:layout_gravity="center_horizontal"
+            android:background="@drawable/rounded_page2"
+            android:layout_weight="1"
+            android:hint="Name &amp; LastName"
+            android:gravity="center"
+            style="@android:style/Animation"
+            android:inputType="text"
+            android:layout_marginLeft="5dp"
+            android:layout_marginRight="5dp" />
+
+        <EditText
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:inputType="textPassword"
+            android:ems="10"
+            android:background="@drawable/rounded_page2"
+            android:id="@+id/txtPasswordLogin"
+            android:layout_weight="1"
+            android:gravity="center"
+            android:hint="Password"
+            style="@android:style/Animation.Dialog"
+            android:layout_gravity="center_horizontal"
+            android:layout_marginRight="5dp"
+            android:layout_marginLeft="5dp" />
+
+        <Button
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:id="@+id/btnLogin"
+            android:layout_gravity="center_horizontal"
+            android:layout_weight="1"
+            android:textSize="30dp"
+            android:textStyle="bold"
+            android:text="Log In"
+            style="@style/Widget.AppCompat.Toolbar.Button.Navigation" />
+
+        <Button
+
+            android:text="Join Gorder"
+            android:textColor="#FFFFFF"
+            android:textSize="30sp"
+
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+
+            android:shadowColor="#000000"
+            android:shadowDx="1"
+            android:shadowDy="3"
+            android:shadowRadius="4"
+            android:id="@+id/btnSignUpMain"
+            android:background="@drawable/btn_style"
+            android:layout_marginBottom="20dp"
+            android:layout_marginLeft="50dp"
+            android:layout_marginRight="50dp" />
+
+    </LinearLayout>
+
+
+</LinearLayout>
